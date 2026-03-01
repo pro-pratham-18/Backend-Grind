@@ -5,7 +5,7 @@ dns.setServers(["1.1.1.1", "8.8.8.8"]);
 
 
 async function connectDB(){
-    await mongoose.connect("mongodb+srv://Prathamesh:6P1862005j123%409@backend-grind.baz0ibl.mongodb.net/pikachu");
+    await mongoose.connect("mongodb+srv://*****@backend-grind.baz0ibl.mongodb.net/pikachu");     // pikachu is database name , if there is no database having name pikachu then it will get created in mongo db
     console.log("connected to DB");
 };
 
