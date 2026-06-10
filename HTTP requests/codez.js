@@ -1,6 +1,9 @@
 // const notes=[];                          // notes array created for method requests testing witout database(mongoDB)                     
 
 
+//         message:"note deleted successfully", 
+//         note:notes
+//     })
 // app.get('/notes',(req,res)=>{              // get request
 //     console.log("get request hit hogyi ");
 //     console.log(req.method);
@@ -9,6 +12,7 @@
 //         notes:notes
 //     });
 // });
+
 
 // app.post('/notes',(req,res)=>{             //post request 
 //     console.log("post request hit hogyi ");
@@ -27,9 +31,6 @@
 //     notes.splice(index,1);
 //     console.log(notes);
 //     res.json({
-//         message:"note deleted successfully", 
-//         note:notes
-//     })
 // });
 //     //pnt: to restart the server after doing changes , use command npx nodeman server.js, after changes just press ctrl+s for restarting server
 
@@ -46,3 +47,5 @@
 //     });
 
 // module.exports=app;
+
+

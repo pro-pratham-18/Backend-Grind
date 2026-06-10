@@ -23,6 +23,7 @@ app.use(express.json());
 //         });
 // });
 
+
 app.get('/notes', async (req,res)=>{
     const notes =await noteModel.find();
     console.log("get request successful");
