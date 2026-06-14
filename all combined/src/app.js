@@ -34,3 +34,7 @@ app.get('/notes', async (req,res)=>{
 });
 
 module.exports=app;
+
+
+
+const notes = noteModel.find()

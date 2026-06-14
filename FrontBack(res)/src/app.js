@@ -34,9 +34,10 @@ app.get('/', (req, res) => {
 
 app.post('/post', (req, res) => {
     const user = req.body;
+    console.log(user);
 
     res.json({
-        message: 'posted successfully ',
+        message: 'post request successfull',
         data: user
     });
 });
