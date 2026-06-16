@@ -23,6 +23,23 @@ const createpost = async (req,res)=>{
     }
 }
 
+const FetchPost =async(req,res)=>{
+    try{
+        const allpost = await postmodel.find();
+        res.status(200).json({
+            message :"All Posts Have Been Fetched Successfully",
+            allpost :allpost
+        })
+    }
+    catch(err){
+        res.status(500).json({
+            message:"Internal Server Error"
+        })
+    }
+
+    
+}
+
 const updatepost = async (req,res)=>{
     try{
     const {id}=req.params;
@@ -73,7 +90,7 @@ const deletepost = async (req,res)=>{
     res.status(200).json({
         message :"following post has been deleted from the post section , their comments and likes are also deleted",
         post :post
-        
+    
     })
     }
     catch(err){
@@ -83,5 +100,4 @@ const deletepost = async (req,res)=>{
     }
 
 }
-
-module.exports={createpost,updatepost,deletepost}
+module.exports={createpost,updatepost,deletepost,FetchPost}

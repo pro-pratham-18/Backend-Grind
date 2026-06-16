@@ -25,7 +25,7 @@ const mongoose =require("mongoose");
       type:Date,
       default:Date.now
     }
- }); 
+ });
 
    //  {collection:"user"}                    // when particuar collection name is required
 
