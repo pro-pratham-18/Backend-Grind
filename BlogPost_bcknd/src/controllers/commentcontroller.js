@@ -21,14 +21,17 @@ const createComment = async (req,res)=>{
             PostMessage : "Comment id added to the post ",
             comment :newcomment,
             post : addcommtopost
+
         })
     }
     catch(err){
         res.status(500).json({
             message:"Internal Server Error "
         })
-    }
 }
+}
+
+
 
 
 const updateComment = async (req,res)=>{
