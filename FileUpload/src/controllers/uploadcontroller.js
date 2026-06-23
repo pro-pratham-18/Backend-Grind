@@ -4,7 +4,7 @@ const filemodel = require("../models/filemodel");
 
 
 
-// handler function for local file upload 
+// handler function for local file upload (to save the media on the server (disk)(permanent))
 
 const cloudinary = require("cloudinary").v2;
 
