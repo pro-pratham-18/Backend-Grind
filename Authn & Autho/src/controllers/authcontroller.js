@@ -50,7 +50,7 @@ const Login = async (req, res) => {
         // extrcting email and password from the request 
         const { email, password } = req.body;
 
-        // vaalidation
+        // validation
         if (!email || !password) {
             return res.status(400).json({
                 success: false,
