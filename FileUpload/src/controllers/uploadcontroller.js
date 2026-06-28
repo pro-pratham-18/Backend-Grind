@@ -174,7 +174,7 @@ exports.videoUpload=async(req,res)=>{
             success:true,
             message:"The File Has Been Uploaded Successfully",
             data :fileData
-        })
+        });
     
     }
     catch(err){ 
