@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Skills\\\\Back End\\\\claude3\\\\AcePrep\" -Recurse -Depth 2)",
+      "Bash(Select-Object FullName, Length, LastWriteTime)",
+      "Bash(Format-Table -AutoSize)"
+    ]
+  }
+}

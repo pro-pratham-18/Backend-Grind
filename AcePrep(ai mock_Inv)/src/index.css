@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-slate-100 font-sans antialiased min-h-screen;
+    background-image: radial-gradient(at 20% 0%, rgba(99, 102, 241, 0.12) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, rgba(139, 92, 246, 0.10) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    @apply bg-background-surface;
+  }
+  *::-webkit-scrollbar-thumb {
+    @apply bg-slate-600 rounded-full;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-500;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-background-card/60 backdrop-blur-sm border border-slate-700/50 rounded-2xl shadow-lg shadow-black/20;
+  }
+  .glass {
+    @apply bg-slate-900/60 backdrop-blur-md border border-slate-700/40;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-accent hover:bg-accent-hover text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-accent/25 hover:shadow-accent/40 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-slate-700 hover:bg-slate-600 text-white font-medium rounded-xl transition-all duration-200 border border-slate-600;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 text-slate-300 hover:text-white hover:bg-slate-800 rounded-xl transition-all duration-200;
+  }
+  .input-field {
+    @apply w-full px-4 py-3 bg-background-surface border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-200;
+  }
+  .label {
+    @apply block text-sm font-medium text-slate-300 mb-1.5;
+  }
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+}

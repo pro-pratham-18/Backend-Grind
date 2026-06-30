@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx vite *)",
+      "Bash(Select-Object -Last 30)",
+      "WebFetch(domain:localhost)"
+    ]
+  }
+}
